@@ -1,0 +1,56 @@
+name: Collect rates
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"      # every 10 minutes (GitHub may run it a few minutes late)
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "normal, probe (test only) or backfill (load history once)"
+        type: choice
+        default: normal
+        options: [normal, probe, backfill]
+      pages:
+        description: "Backfill only: pages to go back, about 20 posts each"
+        default: "10"
+      dab_days:
+        description: "Backfill only: days of Da Afghanistan Bank history to load"
+        default: "60"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Check out the data branch
+        run: |
+          git fetch origin data || true
+          if git show-ref --verify --quiet refs/remotes/origin/data; then
+            git worktree add -B data data_branch origin/data
+          else
+            git worktree add --orphan -b data data_branch
+          fi
+      - name: Collect
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python -m collector.run --data-dir data_branch --mode "${{ inputs.mode || 'normal' }}" --pages "${{ inputs.pages || '10' }}" --dab-days "${{ inputs.dab_days || '60' }}"
+      - name: Publish data
+        if: ${{ inputs.mode != 'probe' }}
+        run: |
+          cd data_branch
+          git config user.name "afn-bot"
+          git config user.email "afn-bot@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || { git commit -m "data $(date -u +%FT%TZ)"; git push origin data; }

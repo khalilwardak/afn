@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AFN.af – Afghani exchange rates today</title>
+<meta name="description" content="Live-style afghani rates from Sarai Shahzada, Khorasan Market and Da Afghanistan Bank, with a converter and a citable daily reference rate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#F3F5F8; --card:#FFFFFF; --ink:#142030; --muted:#5A6778; --line:#DCE2EA;
+  --lapis:#1D4E89; --lapis-soft:#E6EEF8; --ochre:#9A5B00; --ochre-soft:#FBF0DC;
+  --up:#1B7A43; --down:#B3261E; --onlapis:#fff;
+  --serif:"Source Serif 4",Georgia,serif;
+  --sans:"Source Sans 3",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D141D; --card:#16202C; --ink:#E8EDF3; --muted:#9AA7B6; --line:#28364A;
+    --lapis:#7FB0EE; --lapis-soft:#1B2C42; --ochre:#E5A94A; --ochre-soft:#2E2412; --up:#5CC98A; --down:#F2877F; --onlapis:#0D141D;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D141D; --card:#16202C; --ink:#E8EDF3; --muted:#9AA7B6; --line:#28364A;
+  --lapis:#7FB0EE; --lapis-soft:#1B2C42; --ochre:#E5A94A; --ochre-soft:#2E2412; --up:#5CC98A; --down:#F2877F; --onlapis:#0D141D;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.5 var(--sans)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 18px}
+a{color:var(--lapis)}
+:focus-visible{outline:3px solid var(--lapis);outline-offset:2px}
+.num,td,.big{font-variant-numeric:tabular-nums}
+
+/* top band */
+.band{background:#0E2238;color:#EAF1F9;padding-bottom:26px}
+.bar{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+.logo{font:700 26px var(--serif);color:#fff;text-decoration:none;letter-spacing:-.01em}
+.logo span{color:#8DB8EE}
+.date{font-size:14px;color:#A9BBD0;text-align:right}
+.band h1{font:700 clamp(26px,5vw,36px)/1.15 var(--serif);margin:6px 0 4px;letter-spacing:-.01em}
+.band .lede{margin:0 0 18px;color:#B9C8DA;max-width:60ch}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.card{background:#16314F;border:1px solid #28496F;border-radius:12px;padding:14px 16px}
+.card.ref{background:#F2F7FD;color:#142030;border-color:#F2F7FD}
+.card .src{font-size:14px;font-weight:600;color:#A9BBD0}
+.card.ref .src{color:#4A5A6E}
+.card .big{font:700 30px/1.15 var(--serif);margin:4px 0 2px}
+.card .big small{font:500 14px var(--sans);opacity:.7;margin:0 2px 0 8px}
+.card .meta{font-size:13px;color:#A9BBD0}
+.card.ref .meta{color:#4A5A6E}
+.chip{display:inline-block;font-weight:700}
+.up{color:var(--up)}.down{color:var(--down)}.flat{color:var(--muted)}
+.card:not(.ref) .up{color:#6EDC9C}.card:not(.ref) .down{color:#FF9A92}
+.card.ref .up{color:#1B7A43}
+
+/* main grid */
+.main{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:20px;margin-top:22px;align-items:start}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px}
+.panel h2{font:600 20px var(--serif);margin:0;padding:16px 18px 0}
+.tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:12px 18px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tabs button{border:1px solid var(--line);background:var(--bg);color:var(--ink);font:600 14px var(--sans);padding:7px 12px;border-radius:999px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--lapis);border-color:var(--lapis);color:var(--onlapis)}
+.search{margin-left:auto;flex:1 1 150px;max-width:220px}
+input,select{font:inherit;color:var(--ink);width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg)}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:440px}
+th,td{padding:10px 12px;text-align:right;border-top:1px solid var(--line)}
+th{font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}
+th:first-child,td:first-child{text-align:left;padding-left:18px}
+td:last-child,th:last-child{padding-right:18px}
+tbody tr{cursor:pointer}
+tbody tr:hover,tbody tr.sel{background:var(--lapis-soft)}
+td .code{font-weight:700}
+td .name{display:block;font-size:13px;color:var(--muted);line-height:1.2}
+td.t{color:var(--muted);font-size:14px;white-space:nowrap}
+.foot{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center;padding:12px 18px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+.link{background:none;border:0;color:var(--lapis);font:600 14px var(--sans);cursor:pointer;padding:0}
+
+/* converter */
+.conv{position:sticky;top:12px;padding-bottom:18px}
+.conv .in{padding:12px 18px 0;display:grid;gap:12px}
+label{display:block;font-weight:600;font-size:14px;margin-bottom:4px}
+.pair{display:grid;grid-template-columns:1fr 40px 1fr;gap:6px;align-items:end}
+.swap{height:42px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;cursor:pointer;font-size:18px}
+.seg{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{flex:1;border:0;background:var(--bg);color:var(--ink);padding:8px;font:600 14px var(--sans);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--lapis);color:var(--onlapis)}
+.result{padding:14px 18px 0}
+.result .out{font:700 clamp(26px,4vw,32px)/1.15 var(--serif);overflow-wrap:anywhere}
+.result small{display:block;color:var(--muted);font-size:13px;margin-top:4px}
+.quick{display:flex;gap:6px;flex-wrap:wrap}
+.quick button{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:6px;padding:4px 10px;font:600 13px var(--sans);cursor:pointer}
+
+/* lower */
+.lower{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:20px 0 0}
+.box{padding:16px 18px 18px}
+.box h2{padding:0 0 10px}
+.box p,.box li{font-size:15px;margin:0 0 8px;color:var(--ink)}
+.box ol{padding-left:20px;margin:0 0 8px}
+code{display:block;font:400 14px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px;overflow-wrap:anywhere}
+.btn{margin-top:10px;background:var(--lapis);color:var(--onlapis);border:0;border-radius:8px;padding:9px 16px;font:600 14px var(--sans);cursor:pointer}
+.notice{background:var(--ochre-soft);color:var(--ochre);border-radius:8px;padding:8px 12px;font-size:14px;margin:16px 0 0}
+footer{margin:26px 0 30px;color:var(--muted);font-size:13px}
+
+@media (max-width:860px){
+  .main{grid-template-columns:1fr}
+  .conv{position:static;order:-1}
+  .lower{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+  .card .big{font-size:26px}
+}
+</style>
+</head>
+<body>
+
+<div class="band"><div class="wrap">
+  <div class="bar">
+    <a class="logo" href="#">AFN<span>.af</span></a>
+    <div class="date" id="date"></div>
+  </div>
+  <h1>US dollar in afghani today</h1>
+  <p class="lede">Compare the Kabul and Herat markets with Da Afghanistan Bank, then convert any amount.</p>
+  <div class="cards" id="cards"></div>
+</div></div>
+
+<div class="wrap">
+  <div class="notice" id="static">Static snapshot from 11 Oct 2026. Automatic updates are not connected yet.</div>
+
+  <div class="main">
+    <section class="panel" id="rates" style="grid-column:1">
+      <h2>All rates</h2>
+      <div class="tools">
+        <div class="tabs" role="tablist" id="tabs"></div>
+        <input class="search" id="q" type="search" placeholder="Search currency" aria-label="Search currency">
+      </div>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>Currency</th><th>Buy</th><th>Sell</th><th>Time</th><th>Change</th></tr></thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+      <div class="foot">
+        <span>AFN per 1 unit, or per 1,000 where marked 1K. Tap a row to convert it.</span>
+        <button class="link" id="copyTable" type="button">Copy table</button>
+      </div>
+    </section>
+
+    <aside class="panel conv" id="convert" style="grid-column:2;grid-row:1">
+      <h2>Converter</h2>
+      <div class="in">
+        <div><label for="amt">Amount</label><input id="amt" type="number" inputmode="decimal" min="0" value="100">
+          <div class="quick" style="margin-top:6px" id="quick"></div></div>
+        <div class="pair">
+          <div><label for="from">From</label><select id="from"></select></div>
+          <button class="swap" id="swap" type="button" aria-label="Swap currencies">⇄</button>
+          <div><label for="to">To</label><select id="to"></select></div>
+        </div>
+        <div class="seg" role="group" aria-label="Rate basis">
+          <button type="button" id="mEx" aria-pressed="true">Exchange rate</button>
+          <button type="button" id="mMid" aria-pressed="false">Midpoint</button>
+        </div>
+      </div>
+      <div class="result" aria-live="polite"><div class="out" id="out"></div><small id="why"></small></div>
+    </aside>
+  </div>
+
+  <div class="lower">
+    <section class="panel box" id="cite">
+      <h2>Cite this rate</h2>
+      <p>For reports and publications:</p>
+      <code id="citeText"></code>
+      <button class="btn" id="copy" type="button">Copy citation</button>
+    </section>
+    <section class="panel box" id="method">
+      <h2>How the numbers are made</h2>
+      <p>Buy and sell prices come from each market's published board, with the time of each quote. Da Afghanistan Bank rates are read daily from the bank's own exchange-rate page, as cash and transfer rates that share the same midpoint. Market rates are read from each market's own Telegram channel.</p>
+      <p><strong>Reference rate:</strong> the price that held longest, never an average.</p>
+      <ol>
+        <li>We record every price a market posts during the day, with the time it was posted.</li>
+        <li>Buy and sell are handled separately. A repeated post of the same price does not count twice.</li>
+        <li>The reference is the buy and sell price in effect longest before the 3:00 PM Kabul cutoff, then fixed and archived. Before the cutoff, the card shows the price that has held longest so far today.</li>
+      </ol>
+      <p style="color:var(--muted);font-size:13px">Rates are indicative, not an offer to trade. Actual prices vary by exchanger, city and amount.</p>
+    </section>
+  </div>
+
+  <footer>© <span id="year"></span> AFN.af · Rates are indicative and provided without warranty · <a href="mailto:hello@afn.af">hello@afn.af</a></footer>
+</div>
+
+<script src="config.js"></script>
+<script>
+(async () => {
+async function loadData(){
+  const bust = Math.floor(Date.now() / 300000);
+  for (const url of [CONFIG.DATA_URL + "?t=" + bust, "sample-rates.json"]) {
+    try { const r = await fetch(url, {cache: "no-store"}); if (r.ok) return await r.json(); } catch (e) {}
+  }
+  throw new Error("No data");
+}
+const DATA = await loadData();
+
+const $ = id => document.getElementById(id);
+const fmt = (n,d) => n.toLocaleString("en-US",{minimumFractionDigits:d,maximumFractionDigits:d});
+const R = r => ({c:r[0],n:r[1],buy:r[2],sell:r[3],t:r[4],chg:r[5],u:r[6]});
+const M = DATA.markets.map(m => ({...m, rows:m.rows.map(R)}));
+const mid = r => (r.buy + r.sell) / 2;
+const usd = m => m.rows.find(r => r.c === "USD");
+const dd = (a, b) => (Number.isInteger(a) && Number.isInteger(b)) ? 0 : a >= 100 ? 1 : 2;
+const longDate = new Date(DATA.date + "T00:00:00").toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"});
+const arrow = c => c == null ? ["flat","–"] : c > 0 ? ["up","▲ +" + c.toFixed(2) + "%"] : c < 0 ? ["down","▼ " + Math.abs(c).toFixed(2) + "%"] : ["flat","– 0.00%"];
+let active = M[0], basis = "ex", selected = "USD";
+
+const stale = DATA.generated && (Date.now() - new Date(DATA.generated)) > 6 * 3600 * 1000;
+if (DATA.static || stale) $("static").textContent = stale ? "These rates were last updated " + new Date(DATA.generated).toLocaleString("en-GB") + ". Updates may be delayed." : "Sample data. Live rates are not connected yet.";
+else $("static").remove();
+$("year").textContent = new Date().getFullYear();
+$("date").innerHTML = longDate + "<br>" + DATA.solar + (DATA.generated ? "<br>Updated " + new Date(DATA.generated).toLocaleTimeString("en-GB", {hour: "2-digit", minute: "2-digit", timeZone: "Asia/Kabul"}) + " Kabul time" : "");
+
+/* top cards */
+const mk = M.filter(m => m.id !== "dab"), dab = M.find(m => m.id === "dab");
+const refRow = DATA.reference || usd(M[0]), ref = mid(refRow);
+const dabMid = mid(usd(dab));
+const gap = (ref - dabMid) / dabMid * 100;
+$("cards").innerHTML = M.filter(m => m.id !== "dabt").map(m => {
+  const u = usd(m), [cls,txt] = arrow(u.chg);
+  return `<div class="card"><div class="src">${m.id === "dab" ? "Da Afghanistan Bank · midpoint" : m.name}</div>
+    <div class="big">${m.id === "dab" ? fmt(mid(u),3) + "<small>mid</small>" : fmt(u.buy,2) + "<small>buy</small> " + fmt(u.sell,2) + "<small>sell</small>"}</div>
+    <div class="meta">USD · ${u.t} · <span class="chip ${cls}">${txt}</span></div></div>`;
+}).join("") + `<div class="card ref"><div class="src">Daily reference rate (USD)</div>
+    <div class="big">${fmt(refRow.buy,2)}<small>buy</small> ${fmt(refRow.sell,2)}<small>sell</small></div>
+    <div class="meta">Market vs central bank: <span class="chip ${gap>=0?"up":"down"}">${gap>=0?"+":""}${gap.toFixed(2)}%</span></div></div>`;
+/* put reference card first on mobile-friendly order: it is last in grid but 4th card wraps; make grid 4 on wide */
+document.getElementById("cards").style.gridTemplateColumns = innerWidth > 860 ? "repeat(4,1fr)" : "";
+
+/* tabs + table */
+$("tabs").innerHTML = M.map(m => `<button type="button" role="tab" data-id="${m.id}" aria-selected="${m===active}">${m.name}</button>`).join("");
+$("tabs").onclick = e => {
+  const b = e.target.closest("button"); if(!b) return;
+  active = M.find(m => m.id === b.dataset.id);
+  [...$("tabs").children].forEach(x => x.setAttribute("aria-selected", x === b));
+  fillSelects(); render(); convert();
+};
+$("q").oninput = render;
+function render(){
+  const q = $("q").value.trim().toLowerCase();
+  const rows = active.rows.filter(r => !q || r.c.toLowerCase().includes(q) || r.n.toLowerCase().includes(q));
+  $("tbody").innerHTML = rows.map(r => {
+    const [cls,txt] = arrow(r.chg), d = dd(r.buy, r.sell);
+    return `<tr data-c="${r.c}" class="${r.c===selected?"sel":""}"><td><span class="code">${r.c}</span><span class="name">${r.n}${r.u>1?" · 1K":""}</span></td>
+      <td>${fmt(r.buy,d)}</td><td>${fmt(r.sell,d)}</td><td class="t">${r.t}</td><td class="${cls}">${txt}</td></tr>`;
+  }).join("") || `<tr><td colspan="5" style="text-align:center;color:var(--muted)">No match</td></tr>`;
+}
+$("tbody").onclick = e => {
+  const tr = e.target.closest("tr"); if(!tr || !tr.dataset.c) return;
+  selected = tr.dataset.c; $("from").value = selected; $("to").value = "AFN"; render(); convert();
+};
+$("copyTable").onclick = async () => {
+  const tsv = ["Currency\tBuy\tSell\tTime\tUnit"].concat(active.rows.map(r => [r.c,r.buy,r.sell,r.t,r.u].join("\t"))).join("\n");
+  try { await navigator.clipboard.writeText(tsv); $("copyTable").textContent = "Copied"; } catch(e){ $("copyTable").textContent = "Copy failed"; }
+  setTimeout(() => $("copyTable").textContent = "Copy table", 1800);
+};
+
+/* converter */
+function fillSelects(){
+  const codes = ["AFN", ...active.rows.map(r => r.c)], f = $("from").value, t = $("to").value;
+  $("from").innerHTML = $("to").innerHTML = codes.map(c => `<option>${c}</option>`).join("");
+  $("from").value = codes.includes(f) ? f : "USD"; $("to").value = codes.includes(t) ? t : "AFN";
+}
+const row = c => active.rows.find(r => r.c === c);
+function price(c, side){            // AFN per 1 unit
+  if(c === "AFN") return 1;
+  const r = row(c); return (basis === "mid" ? mid(r) : r[side]) / r.u;
+}
+function convert(){
+  const amt = parseFloat($("amt").value), f = $("from").value, t = $("to").value;
+  if(isNaN(amt) || amt < 0){ $("out").textContent = "Enter an amount"; $("why").textContent = ""; return; }
+  const rate = price(f,"buy") / price(t,"sell"), out = amt * rate;
+  const d = out >= 100 ? 2 : out >= 1 ? 3 : 5;
+  $("out").textContent = `${fmt(out,d)} ${t}`;
+  $("why").textContent = `${fmt(amt,2)} ${f} at ${active.name}: 1 ${f} = ${fmt(rate, rate >= 1 ? 2 : 5)} ${t}` +
+    (basis === "ex" ? ". Uses the buy price when you sell a currency and the sell price when you buy one." : ". Midpoint of buy and sell.");
+}
+function setBasis(b){ basis = b; $("mEx").setAttribute("aria-pressed", b==="ex"); $("mMid").setAttribute("aria-pressed", b==="mid"); convert(); }
+$("mEx").onclick = () => setBasis("ex"); $("mMid").onclick = () => setBasis("mid");
+["amt","from","to"].forEach(id => $(id).addEventListener("input", convert));
+$("swap").onclick = () => { const f = $("from").value; $("from").value = $("to").value; $("to").value = f; convert(); };
+$("quick").innerHTML = [10,100,500,1000,5000].map(v => `<button type="button" data-v="${v}">${v.toLocaleString("en-US")}</button>`).join("");
+$("quick").onclick = e => { const b = e.target.closest("button"); if(b){ $("amt").value = b.dataset.v; convert(); } };
+
+/* citation */
+const sar = usd(M[0]), kho = usd(M[1]);
+const cite = `AFN.af (${DATA.date.slice(0,4)}). USD/AFN reference rate, ${longDate}: buy ${fmt(refRow.buy,2)}, sell ${fmt(refRow.sell,2)} (Sarai Shahzada market); Da Afghanistan Bank midpoint ${fmt(dabMid,3)}. https://afn.af`;
+$("citeText").textContent = cite;
+$("copy").onclick = async () => {
+  try { await navigator.clipboard.writeText(cite); $("copy").textContent = "Copied"; }
+  catch(e){ const r = document.createRange(); r.selectNodeContents($("citeText")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); $("copy").textContent = "Press Ctrl+C to copy"; }
+  setTimeout(() => $("copy").textContent = "Copy citation", 2000);
+};
+
+fillSelects(); render(); convert();
+})().catch(e => { console.error(e); const n = document.getElementById("static"); if (n) n.textContent = "Rates are temporarily unavailable. Please try again soon."; });
+</script>
+</body>
+</html>
