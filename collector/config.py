@@ -11,7 +11,7 @@ CHANNELS = [
     {"id": "sarai", "name": "Sarai Shahzada", "handle": "sarai_Shahzada1", "kind": "image",
      "order": ["USD", "EUR", "GBP", "IRR", "PKR", "SAR", "AED", "CHF", "AUD", "CAD", "RUB", "DKK",
                "SEK", "NOK", "TRY", "CNY", "KWD", "QAR", "BHD", "JPY"]},
-    {"id": "khorasan", "name": "Khorasan Market (Herat)", "handle": "nerkhyabkorasan", "kind": "text",
+    {"id": "khorasan", "name": "Khorasan Market (Herat)", "handle": "Nerkh_YabKhoraasan", "kind": "text",
      "order": ["USD", "EUR", "PKR", "IRR_BANK", "IRR_CHEQUE"]},
 ]
 
