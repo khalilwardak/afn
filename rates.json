@@ -1,0 +1,444 @@
+{
+ "date": "2026-10-13",
+ "solar": "21 Mizan 1405",
+ "generated": "2026-10-13T18:28:10+00:00",
+ "static": false,
+ "reference": {
+  "market": "sarai",
+  "buy": 65.0,
+  "sell": 65.05,
+  "basis": "held longest",
+  "final": true
+ },
+ "markets": [
+  {
+   "id": "sarai",
+   "name": "Sarai Shahzada",
+   "rows": [
+    [
+     "USD",
+     "US dollar",
+     65.0,
+     65.05,
+     "10:37 AM",
+     0.08,
+     1
+    ],
+    [
+     "EUR",
+     "Euro",
+     73.0,
+     73.2,
+     "11:28 AM",
+     0.0,
+     1
+    ],
+    [
+     "GBP",
+     "British pound",
+     85.2,
+     85.5,
+     "10:32 AM",
+     0.0,
+     1
+    ],
+    [
+     "IRR",
+     "Iranian rial",
+     0.25,
+     0.26,
+     "10:37 AM",
+     4.08,
+     1000
+    ],
+    [
+     "PKR",
+     "Pakistani rupee",
+     228.0,
+     229.0,
+     "11:28 AM",
+     0.0,
+     1000
+    ],
+    [
+     "SAR",
+     "Saudi riyal",
+     17.3,
+     17.32,
+     "10:37 AM",
+     -0.03,
+     1
+    ],
+    [
+     "AED",
+     "UAE dirham",
+     17.7,
+     17.71,
+     "10:37 AM",
+     0.06,
+     1
+    ],
+    [
+     "CHF",
+     "Swiss franc",
+     78.01,
+     78.07,
+     "10:37 AM",
+     -0.35,
+     1
+    ],
+    [
+     "AUD",
+     "Australian dollar",
+     45.25,
+     45.28,
+     "10:37 AM",
+     0.01,
+     1
+    ],
+    [
+     "CAD",
+     "Canadian dollar",
+     45.56,
+     45.59,
+     "10:37 AM",
+     0.03,
+     1
+    ],
+    [
+     "RUB",
+     "Russian ruble",
+     0.77,
+     0.78,
+     "10:37 AM",
+     1.97,
+     1
+    ],
+    [
+     "DKK",
+     "Danish krone",
+     9.72,
+     9.72,
+     "10:37 AM",
+     -0.15,
+     1
+    ],
+    [
+     "SEK",
+     "Swedish krona",
+     6.49,
+     6.49,
+     "10:37 AM",
+     -0.15,
+     1
+    ],
+    [
+     "NOK",
+     "Norwegian krone",
+     6.79,
+     6.8,
+     "5:31 PM",
+     0.0,
+     1
+    ],
+    [
+     "TRY",
+     "Turkish lira",
+     1.32,
+     1.32,
+     "9:43 AM",
+     0.0,
+     1
+    ],
+    [
+     "CNY",
+     "Chinese yuan",
+     9.71,
+     9.72,
+     "10:37 AM",
+     0.05,
+     1
+    ],
+    [
+     "KWD",
+     "Kuwaiti dinar",
+     209.0,
+     209.0,
+     "9:43 AM",
+     0.0,
+     1
+    ],
+    [
+     "QAR",
+     "Qatari riyal",
+     17.75,
+     17.76,
+     "10:37 AM",
+     -0.53,
+     1
+    ],
+    [
+     "BHD",
+     "Bahraini dinar",
+     172.0,
+     172.0,
+     "9:43 AM",
+     0.0,
+     1
+    ],
+    [
+     "JPY",
+     "Japanese yen",
+     411.0,
+     411.0,
+     "10:37 AM",
+     0.12,
+     1000
+    ]
+   ]
+  },
+  {
+   "id": "khorasan",
+   "name": "Khorasan Market (Herat)",
+   "rows": [
+    [
+     "USD",
+     "US dollar",
+     65.05,
+     65.1,
+     "3:38 PM",
+     -0.15,
+     1
+    ],
+    [
+     "EUR",
+     "Euro",
+     73.0,
+     73.2,
+     "11:03 AM",
+     null,
+     1
+    ],
+    [
+     "PKR",
+     "Pakistani rupee",
+     229.0,
+     229.5,
+     "3:54 PM",
+     0.0,
+     1000
+    ],
+    [
+     "IRRB",
+     "Iranian toman (bank)",
+     0.25,
+     0.26,
+     "3:54 PM",
+     0.0,
+     1000
+    ],
+    [
+     "IRRC",
+     "Iranian toman (cheque)",
+     0.27,
+     0.28,
+     "3:54 PM",
+     0.0,
+     1000
+    ]
+   ]
+  },
+  {
+   "id": "dab",
+   "name": "Da Afghanistan Bank (cash)",
+   "rows": [
+    [
+     "USD",
+     "US dollar",
+     64.799,
+     64.999,
+     "13 Oct",
+     null,
+     1
+    ],
+    [
+     "EUR",
+     "Euro",
+     72.4625,
+     73.0625,
+     "13 Oct",
+     null,
+     1
+    ],
+    [
+     "GBP",
+     "British pound",
+     84.6917,
+     85.4917,
+     "13 Oct",
+     null,
+     1
+    ],
+    [
+     "CHF",
+     "Swiss franc",
+     77.7125,
+     78.2125,
+     "13 Oct",
+     null,
+     1
+    ],
+    [
+     "INR",
+     "Indian rupee",
+     723.3,
+     733.3,
+     "13 Oct",
+     null,
+     1000
+    ],
+    [
+     "PKR",
+     "Pakistani rupee",
+     224.7,
+     232.7,
+     "13 Oct",
+     null,
+     1000
+    ],
+    [
+     "IRT",
+     "Iranian toman",
+     0.1,
+     0.7,
+     "13 Oct",
+     null,
+     1000
+    ],
+    [
+     "CNY",
+     "Chinese yuan",
+     9.7417,
+     10.1417,
+     "13 Oct",
+     null,
+     1
+    ],
+    [
+     "AED",
+     "UAE dirham",
+     17.6083,
+     17.7083,
+     "13 Oct",
+     null,
+     1
+    ],
+    [
+     "SAR",
+     "Saudi riyal",
+     17.118,
+     17.218,
+     "13 Oct",
+     null,
+     1
+    ]
+   ]
+  },
+  {
+   "id": "dabt",
+   "name": "Da Afghanistan Bank (transfer)",
+   "rows": [
+    [
+     "USD",
+     "US dollar",
+     64.849,
+     64.949,
+     "13 Oct",
+     null,
+     1
+    ],
+    [
+     "EUR",
+     "Euro",
+     72.6325,
+     72.8925,
+     "13 Oct",
+     null,
+     1
+    ],
+    [
+     "GBP",
+     "British pound",
+     84.9417,
+     85.2417,
+     "13 Oct",
+     null,
+     1
+    ],
+    [
+     "CHF",
+     "Swiss franc",
+     77.8625,
+     78.0625,
+     "13 Oct",
+     null,
+     1
+    ],
+    [
+     "INR",
+     "Indian rupee",
+     726.3,
+     730.3,
+     "13 Oct",
+     null,
+     1000
+    ],
+    [
+     "PKR",
+     "Pakistani rupee",
+     227.7,
+     229.7,
+     "13 Oct",
+     null,
+     1000
+    ],
+    [
+     "IRT",
+     "Iranian toman",
+     0.2,
+     0.6,
+     "13 Oct",
+     null,
+     1000
+    ],
+    [
+     "CNY",
+     "Chinese yuan",
+     9.8417,
+     10.0417,
+     "13 Oct",
+     null,
+     1
+    ],
+    [
+     "AED",
+     "UAE dirham",
+     17.6283,
+     17.6883,
+     "13 Oct",
+     null,
+     1
+    ],
+    [
+     "SAR",
+     "Saudi riyal",
+     17.138,
+     17.198,
+     "13 Oct",
+     null,
+     1
+    ]
+   ]
+  }
+ ]
+}
