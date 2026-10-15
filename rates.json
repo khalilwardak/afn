@@ -1,14 +1,14 @@
 {
  "date": "2026-10-15",
  "solar": "23 Mizan 1405",
- "generated": "2026-10-15T09:27:36+00:00",
+ "generated": "2026-10-15T14:22:19+00:00",
  "static": false,
  "reference": {
   "market": "sarai",
   "buy": 64.9,
   "sell": 64.95,
   "basis": "held longest",
-  "final": false
+  "final": true
  },
  "markets": [
   {
@@ -206,7 +206,7 @@
      "US dollar",
      65.0,
      65.05,
-     "1:42 PM",
+     "3:45 PM",
      0.0,
      1
     ],
@@ -214,9 +214,9 @@
      "EUR",
      "Euro",
      73.0,
-     73.2,
-     "2:51 PM",
-     0.0,
+     73.1,
+     "3:45 PM",
+     -0.07,
      1
     ],
     [
@@ -224,7 +224,7 @@
      "Pakistani rupee",
      229.5,
      230.0,
-     "10:20 AM",
+     "3:45 PM",
      0.44,
      1000
     ],

@@ -316,154 +316,154 @@
    "USD": {
     "buy": 64.9,
     "sell": 64.95,
-    "held_minutes": 247,
-    "final": false
+    "held_minutes": 309,
+    "final": true
    },
    "EUR": {
     "buy": 73.0,
     "sell": 73.2,
-    "held_minutes": 358,
-    "final": false
+    "held_minutes": 420,
+    "final": true
    },
    "GBP": {
     "buy": 85.2,
     "sell": 85.5,
-    "held_minutes": 358,
-    "final": false
+    "held_minutes": 420,
+    "final": true
    },
    "IRR": {
     "buy": 0.25,
     "sell": 0.26,
-    "held_minutes": 358,
-    "final": false
+    "held_minutes": 420,
+    "final": true
    },
    "PKR": {
     "buy": 229.0,
     "sell": 230.0,
-    "held_minutes": 193,
-    "final": false
+    "held_minutes": 256,
+    "final": true
    },
    "SAR": {
     "buy": 17.65,
     "sell": 17.66,
-    "held_minutes": 193,
-    "final": false
+    "held_minutes": 256,
+    "final": true
    },
    "AED": {
     "buy": 17.67,
     "sell": 17.69,
-    "held_minutes": 247,
-    "final": false
+    "held_minutes": 309,
+    "final": true
    },
    "CHF": {
     "buy": 78.18,
     "sell": 78.24,
-    "held_minutes": 193,
-    "final": false
+    "held_minutes": 256,
+    "final": true
    },
    "AUD": {
     "buy": 45.14,
     "sell": 45.17,
-    "held_minutes": 193,
-    "final": false
+    "held_minutes": 256,
+    "final": true
    },
    "CAD": {
     "buy": 45.67,
     "sell": 45.71,
-    "held_minutes": 193,
-    "final": false
+    "held_minutes": 256,
+    "final": true
    },
    "RUB": {
     "buy": 0.78,
     "sell": 0.78,
-    "held_minutes": 193,
-    "final": false
+    "held_minutes": 256,
+    "final": true
    },
    "DKK": {
     "buy": 9.74,
     "sell": 9.74,
-    "held_minutes": 193,
-    "final": false
+    "held_minutes": 256,
+    "final": true
    },
    "SEK": {
     "buy": 6.51,
     "sell": 6.52,
-    "held_minutes": 193,
-    "final": false
+    "held_minutes": 256,
+    "final": true
    },
    "NOK": {
     "buy": 6.84,
     "sell": 6.84,
-    "held_minutes": 193,
-    "final": false
+    "held_minutes": 256,
+    "final": true
    },
    "TRY": {
     "buy": 1.31,
     "sell": 1.31,
-    "held_minutes": 193,
-    "final": false
+    "held_minutes": 256,
+    "final": true
    },
    "CNY": {
     "buy": 9.7,
     "sell": 9.7,
-    "held_minutes": 193,
-    "final": false
+    "held_minutes": 256,
+    "final": true
    },
    "KWD": {
     "buy": 208.0,
     "sell": 208.0,
-    "held_minutes": 247,
-    "final": false
+    "held_minutes": 309,
+    "final": true
    },
    "QAR": {
     "buy": 17.82,
     "sell": 17.83,
-    "held_minutes": 193,
-    "final": false
+    "held_minutes": 256,
+    "final": true
    },
    "BHD": {
     "buy": 172.0,
     "sell": 172.0,
-    "held_minutes": 358,
-    "final": false
+    "held_minutes": 420,
+    "final": true
    },
    "JPY": {
     "buy": 411.0,
     "sell": 411.0,
-    "held_minutes": 304,
-    "final": false
+    "held_minutes": 366,
+    "final": true
    }
   },
   "khorasan": {
    "USD": {
     "buy": 65.0,
     "sell": 65.05,
-    "held_minutes": 212,
-    "final": false
+    "held_minutes": 214,
+    "final": true
    },
    "EUR": {
     "buy": 73.0,
     "sell": 73.2,
-    "held_minutes": 358,
-    "final": false
+    "held_minutes": 420,
+    "final": true
    },
    "PKR": {
     "buy": 229.5,
     "sell": 230.0,
-    "held_minutes": 217,
-    "final": false
+    "held_minutes": 219,
+    "final": true
    },
    "IRR_BANK": {
-    "buy": 0.25,
-    "sell": 0.26,
-    "held_minutes": 179,
-    "final": false
+    "buy": 0.24,
+    "sell": 0.25,
+    "held_minutes": 241,
+    "final": true
    },
    "IRR_CHEQUE": {
     "buy": 0.26,
     "sell": 0.27,
-    "held_minutes": 220,
-    "final": false
+    "held_minutes": 282,
+    "final": true
    }
   }
  }
