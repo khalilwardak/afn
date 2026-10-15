@@ -408,3 +408,35 @@
 {"t": "2026-10-14T12:46:56+00:00", "market": "khorasan", "code": "PKR", "buy": 229.0, "sell": 229.5, "post": 15784, "close": true}
 {"t": "2026-10-14T12:46:56+00:00", "market": "khorasan", "code": "IRR_BANK", "buy": 0.25, "sell": 0.26, "post": 15784, "close": true}
 {"t": "2026-10-14T12:46:56+00:00", "market": "khorasan", "code": "IRR_CHEQUE", "buy": 0.27, "sell": 0.28, "post": 15784, "close": true}
+{"t": "2026-10-15T05:20:34+00:00", "market": "sarai", "code": "USD", "buy": 64.9, "sell": 64.95, "post": 548}
+{"t": "2026-10-15T05:20:34+00:00", "market": "sarai", "code": "SAR", "buy": 17.31, "sell": 17.33, "post": 548}
+{"t": "2026-10-15T05:20:34+00:00", "market": "sarai", "code": "AED", "buy": 17.67, "sell": 17.69, "post": 548}
+{"t": "2026-10-15T05:20:34+00:00", "market": "sarai", "code": "CHF", "buy": 77.89, "sell": 77.95, "post": 548}
+{"t": "2026-10-15T05:20:34+00:00", "market": "sarai", "code": "AUD", "buy": 45.47, "sell": 45.51, "post": 548}
+{"t": "2026-10-15T05:20:34+00:00", "market": "sarai", "code": "CAD", "buy": 45.64, "sell": 45.68, "post": 548}
+{"t": "2026-10-15T05:20:34+00:00", "market": "sarai", "code": "RUB", "buy": 0.77, "sell": 0.77, "post": 548}
+{"t": "2026-10-15T05:20:34+00:00", "market": "sarai", "code": "SEK", "buy": 6.51, "sell": 6.51, "post": 548}
+{"t": "2026-10-15T05:20:34+00:00", "market": "sarai", "code": "NOK", "buy": 6.84, "sell": 6.85, "post": 548}
+{"t": "2026-10-15T05:20:34+00:00", "market": "sarai", "code": "TRY", "buy": 1.31, "sell": 1.32, "post": 548}
+{"t": "2026-10-15T05:20:34+00:00", "market": "sarai", "code": "CNY", "buy": 9.7, "sell": 9.71, "post": 548}
+{"t": "2026-10-15T05:20:34+00:00", "market": "sarai", "code": "KWD", "buy": 208.0, "sell": 208.0, "post": 548}
+{"t": "2026-10-15T05:20:34+00:00", "market": "sarai", "code": "QAR", "buy": 17.81, "sell": 17.82, "post": 548}
+{"t": "2026-10-15T05:20:34+00:00", "market": "sarai", "code": "JPY", "buy": 410.0, "sell": 410.0, "post": 548}
+{"t": "2026-10-15T06:14:24+00:00", "market": "sarai", "code": "PKR", "buy": 229.0, "sell": 230.0, "post": 549}
+{"t": "2026-10-15T06:14:24+00:00", "market": "sarai", "code": "SAR", "buy": 17.65, "sell": 17.66, "post": 549}
+{"t": "2026-10-15T06:14:24+00:00", "market": "sarai", "code": "CHF", "buy": 78.18, "sell": 78.24, "post": 549}
+{"t": "2026-10-15T06:14:24+00:00", "market": "sarai", "code": "AUD", "buy": 45.14, "sell": 45.17, "post": 549}
+{"t": "2026-10-15T06:14:24+00:00", "market": "sarai", "code": "CAD", "buy": 45.67, "sell": 45.71, "post": 549}
+{"t": "2026-10-15T06:14:24+00:00", "market": "sarai", "code": "RUB", "buy": 0.78, "sell": 0.78, "post": 549}
+{"t": "2026-10-15T06:14:24+00:00", "market": "sarai", "code": "DKK", "buy": 9.74, "sell": 9.74, "post": 549}
+{"t": "2026-10-15T06:14:24+00:00", "market": "sarai", "code": "SEK", "buy": 6.51, "sell": 6.52, "post": 549}
+{"t": "2026-10-15T06:14:24+00:00", "market": "sarai", "code": "NOK", "buy": 6.84, "sell": 6.84, "post": 549}
+{"t": "2026-10-15T06:14:24+00:00", "market": "sarai", "code": "TRY", "buy": 1.31, "sell": 1.31, "post": 549}
+{"t": "2026-10-15T06:14:24+00:00", "market": "sarai", "code": "CNY", "buy": 9.7, "sell": 9.7, "post": 549}
+{"t": "2026-10-15T06:14:24+00:00", "market": "sarai", "code": "QAR", "buy": 17.82, "sell": 17.83, "post": 549}
+{"t": "2026-10-15T06:14:24+00:00", "market": "sarai", "code": "JPY", "buy": 411.0, "sell": 411.0, "post": 549}
+{"t": "2026-10-15T05:47:40+00:00", "market": "khorasan", "code": "IRR_CHEQUE", "buy": 0.26, "sell": 0.27, "post": 15793}
+{"t": "2026-10-15T05:50:48+00:00", "market": "khorasan", "code": "PKR", "buy": 229.5, "sell": 230.0, "post": 15795}
+{"t": "2026-10-15T06:28:52+00:00", "market": "khorasan", "code": "IRR_BANK", "buy": 0.24, "sell": 0.25, "post": 15803}
+{"t": "2026-10-15T06:46:05+00:00", "market": "khorasan", "code": "USD", "buy": 65.05, "sell": 65.1, "post": 15804}
+{"t": "2026-10-15T09:12:00+00:00", "market": "khorasan", "code": "USD", "buy": 65.0, "sell": 65.05, "post": 15810}
