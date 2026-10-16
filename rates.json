@@ -1,15 +1,9 @@
 {
- "date": "2026-10-16",
- "solar": "24 Mizan 1405",
- "generated": "2026-10-16T17:58:17+00:00",
+ "date": "2026-10-17",
+ "solar": "25 Mizan 1405",
+ "generated": "2026-10-16T20:57:55+00:00",
  "static": false,
- "reference": {
-  "market": "sarai",
-  "buy": 64.9,
-  "sell": 64.95,
-  "basis": "held longest",
-  "final": true
- },
+ "reference": null,
  "markets": [
   {
    "id": "sarai",
