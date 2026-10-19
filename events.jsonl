@@ -500,3 +500,9 @@
 {"t": "2026-10-19T05:14:48+00:00", "market": "sarai", "code": "BHD", "buy": 171.0, "sell": 171.0, "post": 554}
 {"t": "2026-10-19T04:47:59+00:00", "market": "khorasan", "code": "USD", "buy": 64.85, "sell": 64.9, "post": 15913}
 {"t": "2026-10-19T05:04:58+00:00", "market": "khorasan", "code": "USD", "buy": 64.8, "sell": 64.9, "post": 15920}
+{"t": "2026-10-19T05:26:08+00:00", "market": "khorasan", "code": "EUR", "buy": 72.9, "sell": 73.1, "post": 15924}
+{"t": "2026-10-19T05:26:08+00:00", "market": "khorasan", "code": "USD", "buy": 64.85, "sell": 64.9, "post": 15925}
+{"t": "2026-10-19T07:04:57+00:00", "market": "khorasan", "code": "EUR", "buy": 72.8, "sell": 73.0, "post": 15938}
+{"t": "2026-10-19T09:07:54+00:00", "market": "khorasan", "code": "IRR_BANK", "buy": 0.24, "sell": 0.25, "post": 15953}
+{"t": "2026-10-19T09:55:40+00:00", "market": "khorasan", "code": "IRR_BANK", "buy": 0.25, "sell": 0.26, "post": 15959}
+{"t": "2026-10-19T11:01:32+00:00", "market": "khorasan", "code": "USD", "buy": 64.9, "sell": 64.95, "post": 15963}
