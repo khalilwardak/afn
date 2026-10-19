@@ -484,3 +484,19 @@
 {"t": "2026-10-18T11:50:39+00:00", "market": "khorasan", "code": "PKR", "buy": 229.0, "sell": 229.5, "post": 15908, "close": true}
 {"t": "2026-10-18T11:50:39+00:00", "market": "khorasan", "code": "IRR_BANK", "buy": 0.25, "sell": 0.26, "post": 15908, "close": true}
 {"t": "2026-10-18T11:50:39+00:00", "market": "khorasan", "code": "IRR_CHEQUE", "buy": 0.27, "sell": 0.28, "post": 15908, "close": true}
+{"t": "2026-10-19T05:14:48+00:00", "market": "sarai", "code": "USD", "buy": 64.85, "sell": 64.9, "post": 554}
+{"t": "2026-10-19T05:14:48+00:00", "market": "sarai", "code": "PKR", "buy": 230.0, "sell": 230.0, "post": 554}
+{"t": "2026-10-19T05:14:48+00:00", "market": "sarai", "code": "SAR", "buy": 17.28, "sell": 17.29, "post": 554}
+{"t": "2026-10-19T05:14:48+00:00", "market": "sarai", "code": "AED", "buy": 17.66, "sell": 17.67, "post": 554}
+{"t": "2026-10-19T05:14:48+00:00", "market": "sarai", "code": "CHF", "buy": 78.52, "sell": 78.58, "post": 554}
+{"t": "2026-10-19T05:14:48+00:00", "market": "sarai", "code": "AUD", "buy": 45.16, "sell": 45.2, "post": 554}
+{"t": "2026-10-19T05:14:48+00:00", "market": "sarai", "code": "CAD", "buy": 45.81, "sell": 45.84, "post": 554}
+{"t": "2026-10-19T05:14:48+00:00", "market": "sarai", "code": "RUB", "buy": 0.77, "sell": 0.77, "post": 554}
+{"t": "2026-10-19T05:14:48+00:00", "market": "sarai", "code": "DKK", "buy": 9.75, "sell": 9.76, "post": 554}
+{"t": "2026-10-19T05:14:48+00:00", "market": "sarai", "code": "SEK", "buy": 6.54, "sell": 6.55, "post": 554}
+{"t": "2026-10-19T05:14:48+00:00", "market": "sarai", "code": "NOK", "buy": 6.88, "sell": 6.88, "post": 554}
+{"t": "2026-10-19T05:14:48+00:00", "market": "sarai", "code": "CNY", "buy": 9.69, "sell": 9.7, "post": 554}
+{"t": "2026-10-19T05:14:48+00:00", "market": "sarai", "code": "QAR", "buy": 17.72, "sell": 17.73, "post": 554}
+{"t": "2026-10-19T05:14:48+00:00", "market": "sarai", "code": "BHD", "buy": 171.0, "sell": 171.0, "post": 554}
+{"t": "2026-10-19T04:47:59+00:00", "market": "khorasan", "code": "USD", "buy": 64.85, "sell": 64.9, "post": 15913}
+{"t": "2026-10-19T05:04:58+00:00", "market": "khorasan", "code": "USD", "buy": 64.8, "sell": 64.9, "post": 15920}
