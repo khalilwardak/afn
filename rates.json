@@ -1,15 +1,9 @@
 {
- "date": "2026-10-24",
- "solar": "2 Aqrab 1405",
- "generated": "2026-10-24T19:05:23+00:00",
+ "date": "2026-10-25",
+ "solar": "3 Aqrab 1405",
+ "generated": "2026-10-24T21:35:52+00:00",
  "static": false,
- "reference": {
-  "market": "sarai",
-  "buy": 64.9,
-  "sell": 64.95,
-  "basis": "held longest",
-  "final": true
- },
+ "reference": null,
  "markets": [
   {
    "id": "sarai",
@@ -216,7 +210,7 @@
      72.7,
      72.9,
      "4:03 PM",
-     0.14,
+     0.0,
      1
     ],
     [
@@ -225,7 +219,7 @@
      229.0,
      229.5,
      "1:26 PM",
-     0.22,
+     0.0,
      1000
     ],
     [
