@@ -1,14 +1,14 @@
 {
  "date": "2026-10-29",
  "solar": "7 Aqrab 1405",
- "generated": "2026-10-29T09:45:34+00:00",
+ "generated": "2026-10-29T16:27:34+00:00",
  "static": false,
  "reference": {
   "market": "sarai",
   "buy": 64.9,
   "sell": 64.95,
   "basis": "held longest",
-  "final": false
+  "final": true
  },
  "markets": [
   {
@@ -206,17 +206,17 @@
      "US dollar",
      65.0,
      65.05,
-     "1:39 PM",
+     "4:05 PM",
      0.08,
      1
     ],
     [
      "EUR",
      "Euro",
-     72.3,
-     72.5,
-     "12:29 PM",
-     0.0,
+     72.0,
+     72.2,
+     "4:05 PM",
+     -0.41,
      1
     ],
     [
