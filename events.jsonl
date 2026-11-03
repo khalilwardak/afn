@@ -673,3 +673,6 @@
 {"t": "2026-11-03T09:19:40+00:00", "market": "khorasan", "code": "USD", "buy": 65.05, "sell": 65.1, "post": 16653}
 {"t": "2026-11-03T09:39:18+00:00", "market": "khorasan", "code": "PKR", "buy": 230.0, "sell": 230.5, "post": 16656}
 {"t": "2026-11-03T09:56:50+00:00", "market": "khorasan", "code": "USD", "buy": 65.1, "sell": 65.15, "post": 16657}
+{"t": "2026-11-03T10:44:10+00:00", "market": "khorasan", "code": "EUR", "buy": 72.6, "sell": 72.8, "post": 16667}
+{"t": "2026-11-03T10:44:11+00:00", "market": "khorasan", "code": "PKR", "buy": 231.0, "sell": 231.5, "post": 16668}
+{"t": "2026-11-03T11:06:39+00:00", "market": "khorasan", "code": "USD", "buy": 65.15, "sell": 65.2, "post": 16674}
