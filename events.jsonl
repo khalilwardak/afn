@@ -785,3 +785,7 @@
 {"t": "2026-11-14T12:07:57+00:00", "market": "khorasan", "code": "PKR", "buy": 232.5, "sell": 233.0, "post": 17216, "close": true}
 {"t": "2026-11-14T12:07:57+00:00", "market": "khorasan", "code": "IRR_BANK", "buy": 0.24, "sell": 0.25, "post": 17216, "close": true}
 {"t": "2026-11-14T12:07:57+00:00", "market": "khorasan", "code": "IRR_CHEQUE", "buy": 0.27, "sell": 0.28, "post": 17216, "close": true}
+{"t": "2026-11-15T05:30:40+00:00", "market": "khorasan", "code": "USD", "buy": 65.7, "sell": 65.75, "post": 17228}
+{"t": "2026-11-15T06:49:50+00:00", "market": "khorasan", "code": "USD", "buy": 65.65, "sell": 65.7, "post": 17232}
+{"t": "2026-11-15T06:49:50+00:00", "market": "khorasan", "code": "PKR", "buy": 233.0, "sell": 233.5, "post": 17233}
+{"t": "2026-11-15T07:07:52+00:00", "market": "khorasan", "code": "EUR", "buy": 72.7, "sell": 72.9, "post": 17236}
