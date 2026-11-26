@@ -4784,7 +4784,7 @@
    }
   },
   "average": {
-   "label": "31 October 2026",
+   "label": "21 November 2026",
    "rates": {
     "USD": {
      "cash": [
@@ -4799,7 +4799,7 @@
     "EUR": {
      "cash": [
       72.5177,
-      73.1177
+      72.8452
      ],
      "transfer": [
       72.6877,
